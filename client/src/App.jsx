@@ -8,15 +8,15 @@ const App = () => {
 
   return (
    
-    
-      <BrowserRouter>
+    <div className="w-screen  min-h-screen  bg-blue-gray-500 flex flex-col font-inter">
+      
         <NavbarWithMegaMenu />
         <Routes>
           <Route path="/" element={<Home />} />
           {/* <Route path="*" element={<Error />} /> */}
         </Routes>
         <Footer />
-      </BrowserRouter>
+      </div>
    
   );
 };
