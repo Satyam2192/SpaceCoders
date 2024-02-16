@@ -2,8 +2,7 @@ import React from "react";
 import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import Footer from "./components/Footer";
-import Header from "./components/Header";
-
+import { NavbarWithMegaMenu } from './components/Navbar';
 const App = () => {
   
 
@@ -11,7 +10,7 @@ const App = () => {
    
     
       <BrowserRouter>
-        <Header />
+        <NavbarWithMegaMenu />
         <Routes>
           <Route path="/" element={<Home />} />
           {/* <Route path="*" element={<Error />} /> */}
