@@ -3,6 +3,8 @@ import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
 import Hero from "./pages/Home/Hero";
 import Footer from "./components/Footer";
 import { NavbarWithMegaMenu } from './components/Navbar';
+import Chat from "./pages/Chat/Chat";
+import Home from "./pages/Home/Home";
 const App = () => {
   
 
@@ -12,7 +14,10 @@ const App = () => {
       
         <NavbarWithMegaMenu />
         <Routes>
-          <Route path="/" element={<Hero />} />
+          <Route path="/" element={<Home/>} />
+          <Route path="/chat" element={<Chat />} />
+          <Route path="/blog" element={<Blog />}/>
+
           {/* <Route path="*" element={<Error />} /> */}
         </Routes>
         <Footer />
