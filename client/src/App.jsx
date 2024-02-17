@@ -1,8 +1,6 @@
 import React from "react";
 import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
-import Hero from "./pages/Home/Hero";
 import Footer from "./components/Footer";
-import { NavbarWithMegaMenu } from './components/Navbar';
 import Chat from "./pages/Chat/Chat";
 import Home from "./pages/Home/Home";
 const App = () => {
@@ -12,7 +10,7 @@ const App = () => {
    
     <div className="w-screen  min-h-screen  bg-blue-gray-500 flex flex-col font-inter">
       
-        <NavbarWithMegaMenu />
+        {/* <NavbarWithMegaMenu /> */}
         <Routes>
           <Route path="/" element={<Home/>} />
           <Route path="/chat" element={<Chat />} />
