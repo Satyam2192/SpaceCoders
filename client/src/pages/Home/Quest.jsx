@@ -32,7 +32,7 @@ export default function CarouselQuest() {
 
   return (
     <>
-      <div className="glide-01 relative w-[11/12] ">
+      <div className="glide-01 relative w-11/12 mx-auto ">
         {/* <div className="max-w-screen-lg mx-auto py-4">
           <h2 className="font-bold text-center text-6xl text-slate-700 font-display">
             Fampianarana
