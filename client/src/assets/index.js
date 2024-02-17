@@ -12,6 +12,7 @@ import mcro from "./mcro.jpg";
 import sk from "./sk.jpeg"
 import p2 from "./p2.jpg"
 import meeting from "./meeting.jpg"
+
 export {
   logo,
   github,

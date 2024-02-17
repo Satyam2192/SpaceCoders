@@ -2,20 +2,22 @@ import React from "react";
 import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
 import Hero from "./pages/Home/Hero";
 import Footer from "./components/Footer";
-import { NavbarWithMegaMenu } from './components/Navbar';
+// import { NavbarWithMegaMenu } from './components/Nav';
+import Nav from "./components/common/Nav";
 const App = () => {
   
 
   return (
    
-    <div className="w-screen  min-h-screen  bg-blue-gray-500 flex flex-col font-inter">
+    <div className=" min-h-screen   bg-gray-300 flex flex-col font-inter">
       
-        <NavbarWithMegaMenu />
+        {/* <NavbarWithMegaMenu /> */}
+        <Nav/>
         <Routes>
           <Route path="/" element={<Hero />} />
           {/* <Route path="*" element={<Error />} /> */}
         </Routes>
-        <Footer />
+        {/* <Footer /> */}
       </div>
    
   );
